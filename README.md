@@ -1,2 +1,4 @@
 # confirmclean
-A system to monitor and detect bias in data science pipelines
+Analysts report spending 80\% of their time manipulating and cleaning data before performing statistical analytics. These operations have a potential to introduce supervisor biases, i.e., favoring a certain outcomes, into the analysis process. 
+Inspired by the classical database concept of isolation levels, we propose an analogous concept of *data modification levels*, which quantify the consistency of data cleaning on a dataset. Each level defines a verifiable condition that provides certain end-user guarantees on the scope and effects of the data repairs on a dataset. These levels are based on what we call the principle of self-evidence, where there is a functional relationship between symbols that are modified and their corresponding repairs. ConfirmClean is a bolt-on layer to existing data cleaning frameworks and enforces the desired data modification level.
+We show that enforcement is fast and seamless and produce datasets with the final desired characteristics.
